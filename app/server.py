@@ -10,7 +10,7 @@ from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
 export_file_url = 'https://drive.google.com/open?id=1Oz-4ZUzL9ii-trXSxFYtoP0ml8dlTZ7k'
-export_file_name = 'export.pkl'
+export_file_name = 'wallaby.pkl'
 
 classes = ['red-necked', 'tammar', 'agile']
 
