@@ -2,40 +2,55 @@
 <head>
   <meta charset='utf-8'>
   <link rel='stylesheet' href='../static/style.css'>
+  <link href="https://fonts.googleapis.com/css?family=Notable&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Domine|Notable&display=swap" rel="stylesheet">
   <script src='../static/client.js'></script>
 </head>
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify 3 kinds of Wallaby!  🐻</div>
-    <p>
-      Use images of <strong>red-necked</strong> wallabies, <strong>agile</strong> wallabies, <strong>tammar</strong> wallabies, or
-      all three!
-    </p>
-    <div class='content'>
-      <div class='no-display'>
-        <input id='file-input'
-               class='no-display'
-               type='file'
-               name='file'
-               accept='image/*'
-               onchange='showPicked(this)'>
-      </div>
-      <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
-      <div class='upload-label'>
-        <label id='upload-label'>No file chosen</label>
-      </div>
-      <div>
-        <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
-      </div>
-      <div class='analyze'>
-        <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
-      </div>
-      <div class='result-label'>
-        <label id='result-label'></label>
-      </div>
-    </div>
-  </div>
+    <div class='insideCenter'>
+          <div class='header'> 
+            <div class="banner"></div>
+            <div class='title'>  WALLABIES  </div>
+          </div>
+          <div class="sub">  👉 Now you can Tell the difference between Agile, Red-necked and Tammar wallabies!</div>
+          <div class="listwallabies">
+          <p>
+            Mind you only use images of: 
+            <ol>
+              <li><strong>Red-Necked</strong>,</li> 
+              <li><strong>Agile</strong>, or</li> 
+              <li><strong>Tammar</strong> </li>
+            </ol>
+            wallabies, otherwise you won't have about 90% chance of being correct!
+          </p>
+        </div>
+          <div class='content'>
+            <div class='no-display'>
+              <input id='file-input'
+                    class='no-display'
+                    type='file'
+                    name='file'
+                    accept='image/*'
+                    onchange='showPicked(this)'>
+            </div>
+            <button class='choose-file-button' type='button' onclick='showPicker()'>Select Image</button>
+            <div class='upload-label'>
+              <label id='upload-label'>No file chosen</label>
+            </div>
+            <div>
+              <img id='image-picked' class='no-display' alt='Chosen Image' height='200'>
+            </div>
+            <div class='analyze'>
+              <button id='analyze-button' class='analyze-button' type='button' onclick='analyze()'>Analyze</button>
+            </div>
+            <div class='result-label'>
+              <label id='result-label'></label>
+            </div>
+          </div>
+        </div>
+        </div>
 </div>
 </body>
 </html>
